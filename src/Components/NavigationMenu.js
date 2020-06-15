@@ -1,0 +1,42 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const NavigationMenu = (props) => {
+  return (
+    <div>
+      <div className="font-bold py-3"> App Name</div>
+      <ul>
+        <li>
+          <Link
+            to="/"
+            className="text-blue-500 py-3 border-t border-b block"
+            onClick={() => props.menu()}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/about"
+            className="text-blue-500 py-3 border-t border-b block"
+            onClick={() => props.menu()}
+          >
+            About
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to="/home"
+            className="text-blue-500 py-3 border-t border-b block"
+            onClick={() => props.menu()}
+          >
+            About
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default NavigationMenu;
